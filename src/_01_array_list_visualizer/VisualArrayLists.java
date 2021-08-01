@@ -16,21 +16,36 @@ public class VisualArrayLists implements ActionListener {
 
 	public void addThingsToList() {
 		// 1. Add a bunch of items to our list (4 or 5 should be enough!)
-		
+		list.add("zero");
+		list.add("one");
+		list.add("two");
+		list.add("three");
 		// 2. Set one item in our list to be something different
-		
+		list.set(0, "one2");
 		// 3. Remove something from our list
-		
+		list.remove(2);
 		// 4. Print the size of our list
-		
+		for (int i=0; i<list.size(); i++) {
+		String a= list.get(i);
+		System.out.println(a);
+		}
 		// 5. Check if our list contains a specific thing of your choice
 		//	  and print whether it is in the list or not.
-		
+		if (list .contains ("hi")) {
+			System.out.println("it's in the list");
+			
+		}
+		else {
+			System.out.println("it's not in the list");
+		}
 		// 6. Get a specific item from our list and print it out
+		System.out.println(list.get(7));
 		
 		// 7. Clear our list of all items
-		
+		list.clear();
 		// 8. Print the size of our list again
+		int listSize= list.size();
+		System.out.println(listSize);
 	}
 	
 	
